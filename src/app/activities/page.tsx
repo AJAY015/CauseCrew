@@ -39,7 +39,7 @@ export default function ActivitiesPage() {
       {/* Header */}
       <section className="pt-32 pb-16 px-6 text-center">
         <Image
-          src="/images/logo.png"
+          src="/images/Logo.png"
           alt="Cause Crew Logo"
           width={100}
           height={100}

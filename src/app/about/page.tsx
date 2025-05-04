@@ -99,7 +99,7 @@ export default function AboutPage() {
         <div className="relative z-10">
           <div className="flex justify-center mb-8 transition-transform duration-700 hover:scale-105">
             <Image
-              src="/images/logo.png"
+              src="/images/Logo.png"
               alt="Cause Crew Logo"
               width={120}
               height={120}
@@ -342,7 +342,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="col-span-1 md:col-span-2">
             <Image
-              src="/images/logo.png"
+              src="/images/Logo.png"
               alt="Cause Crew Logo"
               width={80}
               height={80}

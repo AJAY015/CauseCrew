@@ -78,7 +78,7 @@ export default function PartnersPage() {
         >
           <div className="relative mb-8 inline-block">
             <Image
-              src="/images/logo.png"
+              src="/images/Logo.png"
               alt="Cause Crew Logo"
               width={120}
               height={120}
