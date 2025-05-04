@@ -21,7 +21,9 @@ const Button: React.FC<ButtonProps> = ({ children, className = '', ...props }) =
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-orange-50 text-gray-800 scroll-smooth">
+    <main className="min-h-screen bg-[url('/images/bg.jpg')] bg-no-repeat bg-top bg-contain text-gray-800 scroll-smooth">
+
+      
       {/* NAVBAR */}
       <nav className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-gray-900/80 backdrop-blur-md rounded-full px-6 py-2 flex gap-6 z-50">
         <Link href="/" className="text-white font-medium hover:underline">Home</Link>
@@ -44,24 +46,24 @@ export default function HomePage() {
           transition={{ duration: 7, repeat: Infinity }}
         />
 
-        <Image
+        {/* <Image
           src="/images/logo.png"
           alt="Cause Crew Logo"
           width={160}
           height={160}
           className="mb-6 rounded-full shadow-xl border-4 border-white"
-        />
+        /> */}
 
-        <motion.h1
+        {/* <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="text-6xl font-extrabold tracking-tight mb-4"
         >
           Cause Crew
-        </motion.h1>
+        </motion.h1> */}
 
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
@@ -77,16 +79,21 @@ export default function HomePage() {
           className="text-lg text-gray-600 max-w-xl mb-6"
         >
           Your one-stop solution for all your fundraiser and community service needs.
-        </motion.p>
+        </motion.p> */}
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
+          className="mt-125"
         >
-          <Button className="text-lg font-medium shadow-md hover:scale-105">
-            Your Profile
-          </Button>
+          <Link href="/login">
+  <Button className="text-lg font-medium shadow-md hover:scale-105">
+    Your Profile
+  </Button>
+</Link>
+
+
         </motion.div>
 
         {/* Scroll Indicator */}

@@ -6,24 +6,28 @@ import Link from "next/link";
 
 const activities = [
   {
-    title: "Fundraising Campaigns",
-    desc: "Students create and lead campaigns to support NGO projects.",
-    img: "/images/activity-fundraising.jpg"
+    title: "Education",
+    desc: "Explore our educational initiatives and contribute to supporting students and schools.",
+    img: "/images/Education.jpg",
+    link: "/activities/education" // Add the link to the new Education page
   },
   {
-    title: "Skill-Based Volunteering",
-    desc: "Students offer design, tech, marketing and writing support.",
-    img: "/images/activity-volunteering.jpg"
+    title: "Women and Children",
+    desc: "Explore our fundraising initiatives and contribute to supporting women and children.",
+    img: "/images/WomenAndChildren.jpg",
+    link: "/activities/women-children" // Add the link for Women and Children page
   },
   {
-    title: "Community Drives",
+    title: "Health",
     desc: "Organizing donation and awareness drives on campuses.",
-    img: "/images/activity-drives.jpg"
+    img: "/images/Health.jpg",
+    link: "/activities/health" // Add the link for Health page
   },
   {
-    title: "Creative Campaigns",
+    title: "Disability",
     desc: "Social media takeovers and storytelling for a cause.",
-    img: "/images/activity-creative.jpg"
+    img: "/images/Disability.jpg",
+    link: "/activities/disability" // Add the link for Disability page
   }
 ];
 
@@ -51,19 +55,21 @@ export default function ActivitiesPage() {
       <section className="py-16 px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {activities.map((item, idx) => (
-            <div key={idx} className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <Image
-                src={item.img}
-                alt={item.title}
-                width={400}
-                height={250}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-5">
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+            <Link key={idx} href={item.link}>
+              <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  width={400}
+                  height={250}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-5">
+                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-sm">{item.desc}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

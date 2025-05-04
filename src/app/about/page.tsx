@@ -78,10 +78,10 @@ export default function AboutPage() {
 
   // Causes we support
   const causes = [
-    { label: "Education", img: "/images/Education.avif", link: "/causes/education", description: "Supporting access to quality education for all." },
-    { label: "Health", img: "/images/cause-health.avif", link: "/causes/health", description: "Promoting wellbeing and healthcare initiatives." },
-    { label: "Women and Children", img: "/images/WomenAndChildren.avif", link: "/causes/women-children", description: "Empowering women and protecting children's rights." },
-    { label: "Disability", img: "/images/cause-disability.avif", link: "/causes/disability", description: "Creating inclusive environments for people with disabilities." },
+    { label: "Education", img: "/images/Education.avif", link: "/activities/education", description: "Supporting access to quality education for all." },
+    { label: "Health", img: "/images/cause-health.avif", link: "/activities/health", description: "Promoting wellbeing and healthcare initiatives." },
+    { label: "Women and Children", img: "/images/WomenAndChildren.avif", link: "/activities/women-children", description: "Empowering women and protecting children's rights." },
+    { label: "Disability", img: "/images/cause-disability.avif", link: "/activities/disability", description: "Creating inclusive environments for people with disabilities." },
   ];
 
   return (

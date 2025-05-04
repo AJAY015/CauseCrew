@@ -1,5 +1,6 @@
 {
   "name": "causecreww-website",
+  "homepage": "https://causecreww.ca",
   "version": "0.1.0",
   "private": true,
   "scripts": {

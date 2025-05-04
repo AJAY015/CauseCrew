@@ -233,7 +233,7 @@ export default function PartnersPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
             <Image
-              src="/images/logo-white.png"
+              src="/images/Logo.png"
               alt="Cause Crew Logo"
               width={120}
               height={50}
